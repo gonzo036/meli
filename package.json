@@ -1,0 +1,30 @@
+{
+  "name": "MeLi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "proxy": "http://localhost:3000",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

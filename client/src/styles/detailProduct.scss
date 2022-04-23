@@ -1,0 +1,106 @@
+/**
+    * Author: @gonzo036
+    * Date: 04/22/2022
+    * Ticket: TICKET-XXXXXXXX
+    * Description: this file contains List product result styles
+*/
+@import "./variables";
+
+.list_box_items 
+{
+    padding: 16px;
+    background: $bg-white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
+    margin-bottom: 16px;
+    .box_detail_product 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .box_detail_product_img 
+    {
+        width: 550px;
+        max-height: 680px;
+        @include mobile
+        {
+            width: 100%;
+            max-height: initial;
+        }
+        img 
+        {
+            height: 100%;
+            @include mobile
+            {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .box_product 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mobile
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        button 
+        {
+            height: 36px;
+            width: 100%;
+            text-align: center;
+            border-width: 0;
+            background-color: #3483fa;
+            border-radius: 3px;
+            cursor: pointer;
+            color: $bg-semi-white;
+            &:hover 
+            {
+                background-color: #0863ed;
+                transition: 0.3s ease;
+            }
+        }
+    }
+    .box_product-detail span 
+    {
+        font-size: $font-size-14;
+    }
+    .box_product-detail_title {
+        max-width: 250px;
+        padding-top: 16px;
+        font-size: $font-size-24;
+        font-weight: bold;
+        padding-bottom: 32px;
+    }
+    .box_product-detail_title_price {
+        font-size: $font-size-46;
+        padding-bottom: 32px;
+    }
+    .box_product-detail_subtitle {
+        font-size: 28px;
+        margin-bottom: 32px;
+        margin-top: 60px;
+        max-width: 650px;
+        @include mobile
+        {
+            margin-top: 32px;
+        }
+    }
+    .box_product-detail_subtitle_info {
+        font-size: $font-size-base;;
+        max-width: 650px;
+        color: #999999;
+        white-space: pre-line;
+    }
+}
+
+
+
+

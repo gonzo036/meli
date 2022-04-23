@@ -1,0 +1,174 @@
+/**
+    * Author: @gonzo036
+    * Date: 04/22/2022
+    * Ticket: TICKET-XXXXXXXX
+    * Description: this file contains variables styles
+*/
+
+//Fonts styles
+$font-root:                   "Open Sans", sans-serif;
+$font-size-root:              null;
+$font-size-base:              16px;
+$font-size-12:                12px;
+$font-size-14:                14px;
+$font-size-18:                18px;
+$font-size-24:                24px;
+$font-size-46:                46px;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+//Colors styles
+$bg-white:                   #fff;
+$bg-semi-white:              #f2f2f2;
+$bg-gray:                    #eeeeee;
+$bg-yellow:                  #FFE600;
+$bg-black:                   #333;
+
+//Responsive Media Queries
+@mixin desktopMax {
+    @media screen and (max-width: 1920px) {
+        @content;
+    }
+}
+@mixin desktop_big {
+    @media screen and (max-width: 1680px) {
+        @content;
+    }
+}
+@mixin desktop_big_small {
+    @media screen and (max-width: 1366px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+@mixin desktopSmall {
+    @media screen and (max-width: 1240px) {
+        @content;
+    }
+}
+@mixin tabletNormal {
+    @media screen and (max-width: 1025px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin tabletMin {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin mobileMaxL {
+    @media screen and (max-width: 640px) {
+        @content;
+    }
+}
+@mixin mobilePlus {
+    @media screen and (max-width: 414px) {
+        @content;
+    }
+}
+@mixin androidSpecial {
+    @media screen and (min-height: 544px)  and (max-height: 600px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin mobilePlusL {
+    @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: landscape) {
+            @content;
+    }
+}
+@mixin mobilePlusP {
+    @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: portrait) {
+            @content;
+    }
+}
+
+@mixin mobileL {
+    @media only screen
+      and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin mobileP {
+    @media only screen
+        and (min-device-width: 375px)
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+            @content;
+    }
+}
+@mixin mobileAndroid {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+@mixin mobileAndroidL {
+    @media screen and (max-height: 400px) {
+        @content;
+    }
+}
+@mixin mobileMinAndroid {
+    @media screen
+        and (device-width: 320px)
+        and (device-height: 640px)
+        and (-webkit-device-pixel-ratio: 2) {
+            @content;
+    }
+}
+@mixin mobileMin {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+@mixin mobileMinL {
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin mobileMinP {
+    @media only screen
+        and (min-device-width: 320px)
+        and (orientation: portrait) {
+            @content;
+    }
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+    &::placeholder               {@content}
+}
